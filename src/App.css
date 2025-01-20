@@ -1,0 +1,9 @@
+
+
+#editable a {
+  text-decoration: none; /* Remove underline by default */
+  color: blue; /* Optional: Style the link color */
+}
+#editable a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
