@@ -124,6 +124,7 @@ const App = () => {
         width: "100%",
       }}
     >
+    <h1>Text Editor</h1>
       <div style={{ display: "flex", marginBottom: "10px" }}>
         <select
           style={{
