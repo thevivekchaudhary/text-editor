@@ -115,28 +115,12 @@ const App = () => {
 
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        minHeight: "100vh",
-        width: "100%",
-      }}
+      style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh", width: "100%" }}
     >
     <h1>Text Editor</h1>
-      <div style={{ display: "flex", marginBottom: "10px" }}>
+      <div style={{ display: "flex", marginBottom: "10px"}}>
         <select
-          style={{
-            padding: "5px",
-            fontSize: "16px",
-            cursor: "pointer",
-            backgroundColor: "#2C3A47",
-            color: "white",
-            border: "none",
-            marginRight: "10px",
-            borderRadius: "4px",
-          }}
+          style={{ padding: "5px", fontSize: "16px", cursor: "pointer", backgroundColor: "#2C3A47", color: "white", border: "none", marginRight: "10px", borderRadius: "4px" }}
           onChange={(e) => applyHeading(e.target.value)}
         >
           <option value="" disabled>
@@ -150,90 +134,37 @@ const App = () => {
           <option value="span">SPAN</option>
         </select>
         <button
-          style={{
-            padding: "5px 10px",
-            fontSize: "16px",
-            cursor: "pointer",
-            backgroundColor: "#2C3A47",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            marginRight: "10px",
-          }}
+          style={{ padding: "5px 10px", fontSize: "16px", cursor: "pointer", backgroundColor: "#2C3A47", color: "white", border: "none", borderRadius: "4px", marginRight: "10px" }}
           onClick={() => applyStyle("bold")}
         >
           <b>B</b>
         </button>
         <button
-          style={{
-            padding: "5px 10px",
-            fontSize: "16px",
-            cursor: "pointer",
-            backgroundColor: "#2C3A47",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            marginRight: "10px",
-          }}
+          style={{ padding: "5px 10px", fontSize: "16px", cursor: "pointer", backgroundColor: "#2C3A47", color: "white", border: "none", borderRadius: "4px", marginRight: "10px" }}
           onClick={() => applyStyle("italic")}
         >
           <i>I</i>
         </button>
         <button
-          style={{
-            padding: "5px 10px",
-            fontSize: "16px",
-            cursor: "pointer",
-            backgroundColor: "#2C3A47",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            marginRight: "10px",
-          }}
+          style={{ padding: "5px 10px", fontSize: "16px", cursor: "pointer", backgroundColor: "#2C3A47", color: "white", border: "none", borderRadius: "4px", marginRight: "10px" }}
           onClick={() => applyStyle("underline")}
         >
           <u>U</u>
         </button>
         <button
-          style={{
-            padding: "5px 10px",
-            fontSize: "16px",
-            cursor: "pointer",
-            backgroundColor: "#2C3A47",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            marginRight: "10px",
-          }}
+          style={{ padding: "5px 10px", fontSize: "16px", cursor: "pointer", backgroundColor: "#2C3A47", color: "white", border: "none", borderRadius: "4px", marginRight: "10px" }}
           onClick={() => applyList("ul")}
         >
           Bullet Points
         </button>
         <button
-          style={{
-            padding: "5px 10px",
-            fontSize: "16px",
-            cursor: "pointer",
-            backgroundColor: "#2C3A47",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            marginRight: "10px",
-          }}
+          style={{ padding: "5px 10px", fontSize: "16px", cursor: "pointer", backgroundColor: "#2C3A47", color: "white", border: "none", borderRadius: "4px", marginRight: "10px" }}
           onClick={() => applyList("ol")}
         >
           Numbered List
         </button>
         <button
-          style={{
-            padding: "5px 10px",
-            fontSize: "16px",
-            cursor: "pointer",
-            backgroundColor: "#2C3A47",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-          }}
+          style={{ padding: "5px 10px", fontSize: "16px", cursor: "pointer", backgroundColor: "#2C3A47", color: "white", border: "none", borderRadius: "4px" }}
           onClick={applyLink}
         >
           Link
@@ -242,19 +173,7 @@ const App = () => {
       <div
         id="editable"
         contentEditable
-        style={{
-          width: "80%",
-          height: "400px",
-          border: "1px solid #ccc",
-          padding: "10px",
-          marginTop: "10px",
-          fontSize: "16px",
-          lineHeight: "1.5",
-          outline: "none",
-          minHeight: "200px",
-          whiteSpace: "pre-wrap",
-          wordWrap: "break-word",
-        }}
+        style={{ width: "80%", height: "400px", border: "1px solid #ccc", padding: "10px", marginTop: "10px", fontSize: "16px", lineHeight: "1.5", outline: "none", minHeight: "200px", whiteSpace: "pre-wrap", wordWrap: "break-word" }}
         suppressContentEditableWarning={true}
       ></div>
     </div>
